@@ -1,10 +1,38 @@
+
+/**
+ * Representa un producto con un nombre, precio y cantidad.
+ *
+ * @class Producto
+  */ 
 class Producto {
+  /**
+   * Crea una instancia de Producto.
+   * @param {string} nombre - El nombre del producto.
+   * @param {number} precio - El precio del producto.
+   * @param {number} cantidad - La cantidad del producto.
+   */
+
   constructor(nombre, precio, cantidad) {
+    /**
+     * @type {string}
+     */
     this.nombre = nombre;
+
+    /**
+     * @type {number}
+     */
     this.precio = precio;
+
+    /**
+     * @type {number}
+     */
     this.cantidad = cantidad;
   }
 
+ /**
+  * Calcula el total del producto multiplicando el precio por la cantidad.
+  * @returns {number} - El total del producto.
+  */
   calcularTotal() {
     return this.precio * this.cantidad;
   }
